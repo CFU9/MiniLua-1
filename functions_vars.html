@@ -122,6 +122,9 @@ $(function() {
 : <a class="el" href="structminilua_1_1Location.html#af2ec254a59802b25072ba10c643c00c9">minilua::Location</a>
 , <a class="el" href="structts_1_1Point.html#a1e14c1b8898238b828bfb001cf41a7ab">ts::Point</a>
 </li>
+<li>config
+: <a class="el" href="structminilua_1_1details_1_1Interpreter.html#a09ac672fe6b2079d94869dbc2395abaf">minilua::details::Interpreter</a>
+</li>
 <li>create_env
 : <a class="el" href="structPerformanceStatistics.html#a53cb9a8b88ba0878a75ccbb8f7a19e19">PerformanceStatistics</a>
 </li>
@@ -139,9 +142,6 @@ $(function() {
 : <a class="el" href="structlua_1_1rt_1_1lfunction.html#a4ed4269362e3ff92de9138e0d4296aa9">lua::rt::lfunction</a>
 , <a class="el" href="structminilua_1_1CallContext_1_1Impl.html#ac354ff9239b3fef77611dd44469a6052">minilua::CallContext::Impl</a>
 , <a class="el" href="structminilua_1_1Interpreter_1_1Impl.html#a9d0001eaaae5b56cfb54f07d4820c2ae">minilua::Interpreter::Impl</a>
-</li>
-<li>err
-: <a class="el" href="structminilua_1_1Environment_1_1Impl.html#a40032f0a42fb7d444cde6559901dac94">minilua::Environment::Impl</a>
 </li>
 <li>errors
 : <a class="el" href="structminilua_1_1ParseResult.html#af579253ef90b2a22f441dc9074dab0ce">minilua::ParseResult</a>
@@ -178,13 +178,6 @@ $(function() {
 </ul>
 
 
-<h3><a id="index_g"></a>- g -</h3><ul>
-<li>global
-: <a class="el" href="structminilua_1_1Environment_1_1Impl.html#af62aa22a745fa478e6c3f50f270881b3">minilua::Environment::Impl</a>
-</li>
-</ul>
-
-
 <h3><a id="index_h"></a>- h -</h3><ul>
 <li>head_controlled
 : <a class="el" href="struct__LuaLoopStmt.html#a638c626ef3c2d311630aa2b398887b12">_LuaLoopStmt</a>
@@ -203,12 +196,16 @@ $(function() {
 <li>identifier
 : <a class="el" href="structlua_1_1rt_1_1sourceexp.html#a644ad658c3b8c091064b045d1e6da207">lua::rt::sourceexp</a>
 </li>
-<li>in
-: <a class="el" href="structminilua_1_1Environment_1_1Impl.html#ab76182c9df49ea58238e62c23858ac49">minilua::Environment::Impl</a>
-</li>
 <li>index
 : <a class="el" href="struct__LuaIndexVar.html#a9cca9de5e70705b7c044fdd03b4cd487">_LuaIndexVar</a>
 , <a class="el" href="structts_1_1Capture.html#a900f0a4b8f48af427f5410245c49b580">ts::Capture</a>
+</li>
+<li>inner
+: <a class="el" href="structminilua_1_1Environment_1_1Impl.html#ac0e433a4ced038e427b130145a50c7f5">minilua::Environment::Impl</a>
+</li>
+<li>iter
+: <a class="el" href="structminilua_1_1Table_1_1const__iterator_1_1Impl.html#ab15f29a304b8d27d52e10510a9c4b185">minilua::Table::const_iterator::Impl</a>
+, <a class="el" href="structminilua_1_1Table_1_1iterator_1_1Impl.html#a6d867f5147ed4adfbef364746a943bee">minilua::Table::iterator::Impl</a>
 </li>
 </ul>
 
@@ -273,9 +270,6 @@ $(function() {
 : <a class="el" href="structminilua_1_1CommonSCInfo.html#a384a106ebc11273ef070206418ff6002">minilua::CommonSCInfo</a>
 , <a class="el" href="structminilua_1_1Value_1_1Impl.html#aed0e3e85e01f1f608db2e09f8242afd6">minilua::Value::Impl</a>
 </li>
-<li>out
-: <a class="el" href="structminilua_1_1Environment_1_1Impl.html#a84910bb8af6ddae56af5d48df55cbd35">minilua::Environment::Impl</a>
-</li>
 <li>override
 : <a class="el" href="struct__LuaAssignment.html#afb735b48e69b2daa7f2f6362c04dd70c">_LuaAssignment</a>
 , <a class="el" href="struct__LuaBreakStmt.html#a01c0b8b91eb52ea8445e3c4ce476e79b">_LuaBreakStmt</a>
@@ -312,7 +306,7 @@ $(function() {
 : <a class="el" href="structPerformanceStatistics.html#ad65dfa7d51e30f874bfed00e11e16feb">PerformanceStatistics</a>
 </li>
 <li>parser
-: <a class="el" href="structminilua_1_1Interpreter_1_1Impl.html#a4f69871e89c73ce178ca83a361dcaf31">minilua::Interpreter::Impl</a>
+: <a class="el" href="structminilua_1_1Interpreter_1_1Impl.html#a89888323b7848a591dc0d512f7ab7293">minilua::Interpreter::Impl</a>
 </li>
 <li>pattern_index
 : <a class="el" href="structts_1_1Match.html#a4e920e00dc0a2d9d21350aa7a178b045">ts::Match</a>
@@ -370,6 +364,9 @@ $(function() {
 <li>source_changes
 : <a class="el" href="structPerformanceStatistics.html#a40b65e225dc6bd1c363425a38d0ee194">PerformanceStatistics</a>
 </li>
+<li>source_code
+: <a class="el" href="structminilua_1_1Interpreter_1_1Impl.html#a65ae21eece3301303dab4531f03b9bb3">minilua::Interpreter::Impl</a>
+</li>
 <li>start
 : <a class="el" href="struct__LuaForStmt.html#ad03f91de092cbe89416c5ba14c039337">_LuaForStmt</a>
 , <a class="el" href="structminilua_1_1Range.html#a644712afde3b9e9bab5f8adc11ddd0cd">minilua::Range</a>
@@ -389,6 +386,9 @@ $(function() {
 : <a class="el" href="struct__LuaIndexVar.html#a93ee5b235eb6b151dd711f403210d4e2">_LuaIndexVar</a>
 , <a class="el" href="struct__LuaMemberVar.html#a91796a342f826e44c2579557eaf1e92b">_LuaMemberVar</a>
 </li>
+<li>target
+: <a class="el" href="structminilua_1_1InterpreterConfig.html#a0156555e5d32f78b54190e5d3aff7c59">minilua::InterpreterConfig</a>
+</li>
 <li>token
 : <a class="el" href="struct__LuaName.html#aa102618993bd046965b07dae1116432d">_LuaName</a>
 , <a class="el" href="struct__LuaValue.html#a446a0e7b1d6874c404ad5d473d2c0690">_LuaValue</a>
@@ -405,8 +405,14 @@ $(function() {
 <li>total
 : <a class="el" href="structPerformanceStatistics.html#a4fc50e731dcfc328ab0d528843c8a781">PerformanceStatistics</a>
 </li>
+<li>trace_calls
+: <a class="el" href="structminilua_1_1InterpreterConfig.html#a582e8ea3fe1082890cac252eb19556b4">minilua::InterpreterConfig</a>
+</li>
+<li>trace_nodes
+: <a class="el" href="structminilua_1_1InterpreterConfig.html#aeb53f01d5159596291e45267ed104f89">minilua::InterpreterConfig</a>
+</li>
 <li>tree
-: <a class="el" href="structminilua_1_1Interpreter_1_1Impl.html#a27c87ded8a90a4e5f7e32733eb308a68">minilua::Interpreter::Impl</a>
+: <a class="el" href="structminilua_1_1Interpreter_1_1Impl.html#a1eab99f14153270c9a0d9968c81afe2f">minilua::Interpreter::Impl</a>
 </li>
 <li>type
 : <a class="el" href="structLuaToken.html#a55094256fee6e2df265f964890d6698b">LuaToken</a>

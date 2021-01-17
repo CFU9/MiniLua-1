@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['details_816',['details',['../namespaceminilua_1_1details.html',1,'minilua']]],
-  ['minilua_817',['minilua',['../namespaceminilua.html',1,'']]]
+  ['details_901',['details',['../namespaceminilua_1_1details.html',1,'minilua']]],
+  ['minilua_902',['minilua',['../namespaceminilua.html',1,'']]]
 ];

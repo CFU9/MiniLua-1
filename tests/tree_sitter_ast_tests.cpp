@@ -581,13 +581,13 @@ TEST_CASE("var_dec_statements", "[tree-sitter][!hide]") {
                          "local i,j = 42,96\n"
                          "\n"
                          "table1.table2.field1 = function() print(2) end\n"
-                         "";
+                         "table1[table2] = 2\n";
     ts::Tree tree = parser.parse_string(source);
     ts::Node root = tree.root_node();
     auto prog = Program(root);
     Body body = prog.body();
     auto stats = body.statements();
-    CHECK(stats.size() == 6);
+    CHECK(stats.size() == 7);
     // 1st statement
     auto opt1 = stats[0].options();
     CHECK(std::holds_alternative<VariableDeclaration>(opt1));
@@ -658,6 +658,26 @@ TEST_CASE("var_dec_statements", "[tree-sitter][!hide]") {
     CHECK(holds_alternative<Identifier>(dec_opt3));
     auto table_id = std::get_if<Identifier>(&dec_opt3);
     CHECK(table_id->str() == "table1"s);
+    //7th statement
+    auto opt7 = stats[6].options();
+    CHECK(std::holds_alternative<VariableDeclaration>(opt7));
+    auto var_dec7 = std::get_if<VariableDeclaration>(&opt7);
+    CHECK(var_dec7->declarations().size()==1);
+    CHECK(var_dec7->declarators().size()==1);
+    auto ti_opt1 = var_dec7->declarators()[0].var();
+    CHECK(std::holds_alternative<TableIndex>(ti_opt1));
+    auto ti1 = std::get_if<TableIndex>(&ti_opt1);
+    auto pref1 = ti1->table().options();
+    CHECK(std::holds_alternative<VariableDeclarator>(pref1));
+    auto pref_dec1 = std::get_if<VariableDeclarator>(&pref1);
+    auto pref_opt1 = pref_dec1->var();
+    CHECK(std::holds_alternative<Identifier>(pref_opt1));
+    auto id1 = std::get_if<Identifier>(&pref_opt1);
+    CHECK(id1->str()=="table1");
+    auto index1_opt = ti1->index().options();
+    CHECK(std::holds_alternative<Identifier>(index1_opt));
+    auto index1 = std::get_if<Identifier>(&index1_opt);
+    CHECK(index1->str()=="table2");
 }
 TEST_CASE("table_statements", "[tree-sitter][!hide]") {
     ts::Parser parser;
@@ -760,3 +780,11 @@ TEST_CASE("function_calls", "[tree-sitter][!hide]") {
     }
 }
 } // namespace minilua::details
+
+TEST_CASE("new_nodes", "[tree-sitter][!hide]") {
+    ts::Parser parser;
+    std::string source = "a[\"b\"] = 4+4\n"
+                         "local d";
+    ts::Tree tree = parser.parse_string(source);
+    ts::Node root = tree.root_node();
+}

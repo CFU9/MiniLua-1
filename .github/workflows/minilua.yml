@@ -83,7 +83,8 @@ jobs:
 
     steps:
        -name: sync submodules
-        run: git submodule sync
+        command: ["/bin/sh","-c"]
+        args: ["git submodule sync"]
       - name: Checkout Code
         uses: actions/checkout@v2
         with:

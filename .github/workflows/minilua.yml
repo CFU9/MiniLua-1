@@ -82,6 +82,8 @@ jobs:
       # ASAN_SYMBOLIZER_PATH: llvm-symbolizer-10
 
     steps:
+       -name: sync submodules
+        run: git submodule sync
       - name: Checkout Code
         uses: actions/checkout@v2
         with:

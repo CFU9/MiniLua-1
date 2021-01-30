@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unopenum_1620',['UnOpEnum',['../namespaceminilua_1_1details.html#ac96aa8feb51f2f6e4cb8ab95ccf5bfc5',1,'minilua::details']]]
+  ['type_1573',['Type',['../structLuaToken.html#aa60b13d88c317e381fc5033c047cf432',1,'LuaToken']]],
+  ['typekind_1574',['TypeKind',['../namespacets.html#a4b1e0c2da53e86fac30568c832aa2720',1,'ts']]]
 ];

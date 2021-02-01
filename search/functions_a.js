@@ -9,7 +9,7 @@ var searchData=
   ['less_5fthan_1138',['less_than',['../classminilua_1_1Value.html#a3f75ea17d07e35c56fad2b34b5ee28a2',1,'minilua::Value']]],
   ['less_5fthan_5for_5fequal_1139',['less_than_or_equal',['../classminilua_1_1Value.html#af3fd15942172c331d42e35307ef0e11e',1,'minilua::Value']]],
   ['lfunction_1140',['lfunction',['../structlua_1_1rt_1_1lfunction.html#a20dbc637fbe23701e3230e31479dc2b5',1,'lua::rt::lfunction']]],
-  ['literal_1141',['literal',['../structlua_1_1rt_1_1val.html#a1684caf31a6584b1d19feab78182236a',1,'lua::rt::val::literal()'],['../classminilua_1_1details_1_1ast_1_1Literal.html#abcabce056452c74f75ca3b7723f5ed8b',1,'minilua::details::ast::Literal::Literal()']]],
+  ['literal_1141',['literal',['../structlua_1_1rt_1_1val.html#a1684caf31a6584b1d19feab78182236a',1,'lua::rt::val::literal()'],['../classminilua_1_1details_1_1ast_1_1Literal.html#a0078122e956384d251c1420deb3fc7ca',1,'minilua::details::ast::Literal::Literal()']]],
   ['local_1142',['local',['../classminilua_1_1details_1_1ast_1_1VariableDeclaration.html#a1093062c1514d85451cbb0d47f5d0d28',1,'minilua::details::ast::VariableDeclaration::local()'],['../classminilua_1_1details_1_1ast_1_1FunctionStatement.html#ab25126a32254aa7dd4db717ee828af1f',1,'minilua::details::ast::FunctionStatement::local()'],['../classminilua_1_1Env.html#a9a0e610247647abfb828b9bf9ee9c015',1,'minilua::Env::local() -&gt; LocalEnv &amp;'],['../classminilua_1_1Env.html#a2cc67a67e4d80e17ccd518b9cc69ec43',1,'minilua::Env::local() const -&gt; const LocalEnv &amp;']]],
   ['log_1143',['log',['../namespaceminilua_1_1math.html#a32c7cce8a341daae75b7e13a62f5ba57',1,'minilua::math']]],
   ['logic_5fand_1144',['logic_and',['../classminilua_1_1Value.html#a61c739726a47306384297e6c101e04d2',1,'minilua::Value']]],

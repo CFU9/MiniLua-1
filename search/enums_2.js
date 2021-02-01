@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['literaltype_1571',['LiteralType',['../namespaceminilua_1_1details_1_1ast.html#ac1f8ab71dc6e1b079c34c18a32cd05f4',1,'minilua::details::ast']]]
+  ['spreadpos_1567',['SpreadPos',['../namespaceminilua_1_1details_1_1ast.html#ae16ec54badeb3117a7873dd643504fb9',1,'minilua::details::ast']]]
 ];

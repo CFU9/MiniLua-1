@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['spreadpos_1572',['SpreadPos',['../namespaceminilua_1_1details_1_1ast.html#ae16ec54badeb3117a7873dd643504fb9',1,'minilua::details::ast']]]
+  ['type_1568',['Type',['../structLuaToken.html#aa60b13d88c317e381fc5033c047cf432',1,'LuaToken']]],
+  ['typekind_1569',['TypeKind',['../namespacets.html#a4b1e0c2da53e86fac30568c832aa2720',1,'ts']]]
 ];

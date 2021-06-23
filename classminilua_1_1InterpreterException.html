@@ -55,6 +55,41 @@
           <span class="m-breadcrumb"><a href="namespaceminilua.html">minilua</a>::<wbr/></span>InterpreterException <span class="m-thin">class</span>
         </h1>
         <p>Exception thrown by the interpreter.</p>
+        <div class="m-block m-default">
+          <h3>Contents</h3>
+          <ul>
+            <li>
+              Reference
+              <ul>
+                <li><a href="#derived-classes">Derived classes</a></li>
+                <li><a href="#pub-methods">Public functions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<p>This exception can contain a stack trace.</p>
+        <section id="derived-classes">
+          <h2><a href="#derived-classes">Derived classes</a></h2>
+          <dl class="m-doc">
+            <dt>
+              class <a href="classminilua_1_1BadArgumentError.html" class="m-doc">BadArgumentError</a>
+            </dt>
+            <dd>Exception indicating a bad argument of a function call.</dd>
+          </dl>
+        </section>
+        <section id="pub-methods">
+          <h2><a href="#pub-methods">Public functions</a></h2>
+          <dl class="m-doc">
+            <dt id="abb3b78f243e0461fbf8cb946190b7a0c">
+              <span class="m-doc-wrap-bumper">auto <a href="#abb3b78f243e0461fbf8cb946190b7a0c" class="m-doc-self">with</a>(</span><span class="m-doc-wrap"><a href="structminilua_1_1StackItem.html" class="m-doc">StackItem</a> item) const -&gt; InterpreterException -&gt; auto</span>
+            </dt>
+            <dd>Create a new exception with the given stack item added.</dd>
+            <dt id="a0ed10afac3f50fe7c75c7e6c989b593f">
+              <span class="m-doc-wrap-bumper">void <a href="#a0ed10afac3f50fe7c75c7e6c989b593f" class="m-doc-self">print_stacktrace</a>(</span><span class="m-doc-wrap">std::ostream&amp; os) const</span>
+            </dt>
+            <dd>Print the stacktrace to the output stream.</dd>
+          </dl>
+        </section>
       </div>
     </div>
   </div>
